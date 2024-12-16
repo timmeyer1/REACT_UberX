@@ -1,7 +1,11 @@
 // src/App.js
 import React from 'react';
+
+// components
 import Header from './components/Header';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Importation de Routes
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -11,7 +15,7 @@ const App = () => {
     <Router>
       <div className="min-h-screen bg-gray-100">
         <Header />
-        <main className="container mx-auto p-4">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/about" element={<About />} />  

@@ -15,6 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -31,4 +32,58 @@ h3 {
 button {
   font-family: 'Montserrat', sans-serif;
   /* Boutons en Montserrat */
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float infinite ease-in-out;
+}
+
+/* Personnalisation de la scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Largeur de la barre de défilement */
+  background: black;
+}
+
+::-webkit-scrollbar-track {
+  background: none; /* Supprime la piste complètement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 19, 92); /* Pouce noir */
+  border-radius: 10px; /* Coins arrondis du pouce */
+}
+
+/* Ajout d'un effet de survol sur le pouce */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444; /* Change la couleur du pouce quand on survole */
 }
