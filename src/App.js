@@ -3,6 +3,7 @@ import React from 'react';
 
 // components
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Importation de Routes
 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

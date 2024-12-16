@@ -107,7 +107,7 @@ const Home = () => {
                     <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-8">
                         "Un service exceptionnel avec une assistance rapide !"
                     </p>
-                    <p className="text-xl md:text-lg italic">— Client Satisfait</p>
+                    <p className="text-xl md:text-lg italic">— Vraiment bien 👍🏻</p>
                 </AnimatedElement>
             </section>
 
