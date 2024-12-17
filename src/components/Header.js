@@ -37,7 +37,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-black backdrop-blur-sm text-white py-4 px-6 shadow-lg fixed top-0 left-0 right-0 z-50">
+        <header className="bg-black backdrop-blur-sm text-white py-4 px-6 shadow-lg top-0 left-0 right-0 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <h1 className="text-2xl font-bold tracking-tight titre">
                     <a href='/'>
