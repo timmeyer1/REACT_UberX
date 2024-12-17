@@ -47,7 +47,7 @@ const Home = () => {
             <title>Uber X - Accueil</title>
             {/* Section d'Introduction */}
             <section className="w-full h-screen flex flex-col items-center justify-center bg-black relative">
-                <StarField />
+            <StarField />
                 <AnimatedElement className="z-10">
                     <h1 className="text-6xl md:text-8xl font-bold text-center titre">
                         Uber <span className="text-purple-500">X</span>

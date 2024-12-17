@@ -4,14 +4,14 @@ import StarField from '../components/StarField';
 
 const About = () => {
     return (
-        <div className="bg-black text-white min-h-screen flex flex-col items-center p-8">
+        <div className="bg-black text-white min-h-screen flex flex-col items-center p-8 pt-24">
             <title>Uber X - À Propos</title>
             <StarField />
             <h1 className="text-4xl font-bold mb-4 titre">À Propos de Nous</h1>
             <p className="text-lg max-w-2xl text-center mb-8">
                 Nous sommes un fournisseur de services cloud dédié à l'innovation et à l'excellence. Notre mission est de fournir des solutions cloud fiables et sécurisées qui améliorent la productivité et la collaboration.
             </p>
-            
+
             <section className="mb-12 text-center">
                 <h2 className="text-3xl font-semibold mb-4 titre">Notre Mission</h2>
                 <p className="text-lg max-w-2xl mx-auto mb-8">
@@ -36,7 +36,7 @@ const About = () => {
             <section className="text-center">
                 <h2 className="text-3xl font-semibold mb-4 titre">Contactez-Nous</h2>
                 <p className="text-lg max-w-2xl mx-auto">
-                    Vous avez des questions sur nos services cloud ? Contactez-nous à l'adresse : 
+                    Vous avez des questions sur nos services cloud ? Contactez-nous à l'adresse :
                     <a href="mailto:contact@votreentreprise.com" className="text-purple-500"> contact@uberx.com</a>.
                 </p>
             </section>

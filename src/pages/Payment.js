@@ -43,7 +43,7 @@ const Payment = () => {
     if (!selectedService) return <div>Chargement...</div>;
 
     return (
-        <div className="bg-gray-100 min-h-screen">
+        <div className="bg-gray-100 min-h-screen pt-10">
             <title>Uber X - Paiement</title>
             <StarField />
             <div className="container mx-auto px-4 py-12">

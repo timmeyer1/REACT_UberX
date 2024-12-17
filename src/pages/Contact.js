@@ -16,57 +16,56 @@ const Contact = () => {
     };
 
     return (
-        <div className="relative bg-black text-white min-h-screen">
-            <title>Uber X - Contact</title>
-            {/* Arrière-plan étoilé */}
+            <div className="bg-black text-white min-h-screen flex flex-col items-center">
             <StarField />
+                <title>Uber X - Contact</title>
 
-            {/* Contenu principal */}
-            <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
-                <h1 className="text-4xl font-bold mb-4 titre">Contactez-Nous</h1>
-                <p className="text-lg max-w-2xl text-center mb-8">
-                    Nous serions ravis de recevoir vos questions ou commentaires.
-                </p>
-                <form onSubmit={handleSubmit} className="w-full max-w-md">
-                    <div className="mb-4">
-                        <label className="block text-sm font-semibold mb-2" htmlFor="name">Nom</label>
-                        <input
-                            type="text"
-                            id="name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                            className="w-full p-2 border border-gray-300 rounded text-black"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-sm font-semibold mb-2" htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="w-full p-2 border border-gray-300 rounded text-black"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <label className="block text-sm font-semibold mb-2" htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            required
-                            rows="4"
-                            className="w-full p-2 border border-gray-300 rounded text-black"
-                        ></textarea>
-                    </div>
-                    <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-                        Envoyer
-                    </button>
-                </form>
+                {/* Contenu principal */}
+                <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
+                    <h1 className="text-4xl font-bold mb-4 titre">Contactez-Nous</h1>
+                    <p className="text-lg max-w-2xl text-center mb-8">
+                        Nous serions ravis de recevoir vos questions ou commentaires.
+                    </p>
+                    <form onSubmit={handleSubmit} className="w-full max-w-md">
+                        <div className="mb-4">
+                            <label className="block text-sm font-semibold mb-2" htmlFor="name">Nom</label>
+                            <input
+                                type="text"
+                                id="name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                                className="w-full p-2 border border-gray-300 rounded text-black"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-sm font-semibold mb-2" htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                className="w-full p-2 border border-gray-300 rounded text-black"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <label className="block text-sm font-semibold mb-2" htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                                required
+                                rows="4"
+                                className="w-full p-2 border border-gray-300 rounded text-black"
+                            ></textarea>
+                        </div>
+                        <button type="submit" className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
     );
 };
 
