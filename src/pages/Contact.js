@@ -17,6 +17,7 @@ const Contact = () => {
 
     return (
         <div className="relative bg-black text-white min-h-screen">
+            <title>Uber X - Contact</title>
             {/* Arrière-plan étoilé */}
             <StarField />
 

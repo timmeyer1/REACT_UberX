@@ -5,6 +5,7 @@ import StarField from '../components/StarField';
 const About = () => {
     return (
         <div className="bg-black text-white min-h-screen flex flex-col items-center p-8">
+            <title>Uber X - À Propos</title>
             <StarField />
             <h1 className="text-4xl font-bold mb-4">À Propos de Nous</h1>
             <p className="text-lg max-w-2xl text-center mb-8">

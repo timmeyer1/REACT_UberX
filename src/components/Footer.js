@@ -38,7 +38,7 @@ const Footer = () => {
 
                 {/* Section Mentions Légales et Copyright */}
                 <div className="mt-8 text-center">
-                    <p>&copy; {new Date().getFullYear()} Votre Entreprise. Tous droits réservés.</p>
+                    <p>&copy; {new Date().getFullYear()} Uber X. Tous droits réservés.</p>
                     <p><a href="/privacy-policy" className="hover:text-purple-500">Politique de confidentialité</a> | <a href="/terms-of-service" className="hover:text-purple-500">Conditions d'utilisation</a></p>
                 </div>
             </div>

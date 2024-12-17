@@ -44,6 +44,7 @@ const Home = () => {
 
     return (
         <div className="bg-black text-white w-full max-w-full overflow-x-hidden">
+           <title>Uber X - Accueil</title> 
             {/* Section d'Introduction */}
             <section className="w-full h-screen flex flex-col items-center justify-center bg-black relative">
                 <StarField />
@@ -103,7 +104,7 @@ const Home = () => {
             <section className="w-full min-h-screen flex items-center justify-center bg-black p-8 relative overflow-hidden">
                 <StarField />
                 <AnimatedElement className="z-10 text-center w-full">
-                    <h2 className="text-4xl md:text-5xl font-semibold mb-4">Ce Que Disent Nos Clients</h2>
+                    <h2 className="text-4xl md:text-5xl font-semibold mb-4">Nos Avis</h2>
                     <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-8">
                         "Un service exceptionnel avec une assistance rapide !"
                     </p>
