@@ -23,7 +23,7 @@ const Contact = () => {
 
             {/* Contenu principal */}
             <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8">
-                <h1 className="text-4xl font-bold mb-4">Contactez-Nous</h1>
+                <h1 className="text-4xl font-bold mb-4 titre">Contactez-Nous</h1>
                 <p className="text-lg max-w-2xl text-center mb-8">
                     Nous serions ravis de recevoir vos questions ou commentaires.
                 </p>

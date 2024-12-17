@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="bg-black backdrop-blur-sm text-white py-4 px-6 shadow-lg">
             <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-2xl font-bold tracking-tight">
+                <h1 className="text-2xl font-bold tracking-tight titre">
                     <a href='/'>
                         <span className="text-white">Uber</span>
                         <span className="text-purple-500"> X</span>
@@ -15,6 +15,7 @@ const Header = () => {
                 <nav>
                     <ul className="flex space-x-4">
                         <li><Button href="/">Accueil</Button></li>
+                        <li><Button href="/services">Abonnements</Button></li>
                         <li><Button href="/about">À propos</Button></li>
                         <li><Button href="/contact">Contact</Button></li>
                     </ul>

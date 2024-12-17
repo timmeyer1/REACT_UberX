@@ -22,11 +22,8 @@ code {
 }
 
 
-h1,
-h2,
-h3 {
+h1.titre, h2.titre {
   font-family: 'Playfair Display', serif;
-  /* Titres en Playfair Display */
 }
 
 button {
