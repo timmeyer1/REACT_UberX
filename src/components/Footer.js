@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="border-t border-gray-700 pt-8 text-center text-sm">
                     <p>&copy; {new Date().getFullYear()} Uber X. Tous droits réservés.</p>
                     <p className="mt-2">
-                        Politique de confidentialité | Conditions d'utilisation
+                    <a href="/privacy" className="hover:text-purple-400 transition-colors duration-300">Politique de confidentialité</a> | <a href="/terms" className="hover:text-purple-400 transition-colors duration-300">Conditions d'utilisation</a>
                     </p>
                 </div>
             </div>

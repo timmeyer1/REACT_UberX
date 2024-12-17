@@ -7,12 +7,15 @@ import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Importation de Routes
 
-// pages
+// -------- Pages --------
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Payment from './pages/Payment';
+// security
+import PrivacyPolicy from './pages/Security/PrivacyPolicy';
+import TermsOfUse from './pages/Security/TermsOfUse';
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/payment" element={<Payment />} />
+
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfUse />} />
           </Routes>
         </main>
         <Footer />
