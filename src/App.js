@@ -16,6 +16,10 @@ import Payment from './pages/Payment';
 // security
 import PrivacyPolicy from './pages/Security/PrivacyPolicy';
 import TermsOfUse from './pages/Security/TermsOfUse';
+// auth
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+import Dashboard from './pages/Auth/Dashboard';
 
 const App = () => {
   return (
@@ -29,6 +33,10 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/payment" element={<Payment />} />
+
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
 
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfUse />} />
