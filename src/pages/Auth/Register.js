@@ -27,7 +27,6 @@ const Register = () => {
             });
             const data = await response.json();
             if (response.ok) {
-                alert('Inscription réussie');
                 window.location.href = '/login'; // Rediriger vers la page de connexion
             } else {
                 alert(data.message || "Erreur lors de l'inscription");
