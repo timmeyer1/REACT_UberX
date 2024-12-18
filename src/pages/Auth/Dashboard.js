@@ -99,31 +99,28 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="bg-black text-white min-h-screen flex">
+        <div className="bg-black text-white min-h-screen flex flex-col md:flex-row">
             <StarField />
 
             {/* Menu latéral */}
-            <div className="bg-purple-900/90 w-64 p-6 flex flex-col space-y-6">
+            <div className="bg-purple-900/90 w-full md:w-64 p-6 flex flex-col space-y-6">
                 <h1 className="text-2xl font-bold text-center text-white">Tableau de bord</h1>
                 <nav className="flex flex-col space-y-4">
                     <button
                         onClick={() => setActiveMenu('overview')}
-                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'overview' ? 'bg-purple-700' : 'hover:bg-purple-800'
-                            }`}
+                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'overview' ? 'bg-purple-700' : 'hover:bg-purple-800'}`}
                     >
                         Vue d'ensemble
                     </button>
                     <button
                         onClick={() => setActiveMenu('profile')}
-                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'profile' ? 'bg-purple-700' : 'hover:bg-purple-800'
-                            }`}
+                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'profile' ? 'bg-purple-700' : 'hover:bg-purple-800'}`}
                     >
                         Profil
                     </button>
                     <button
                         onClick={() => setActiveMenu('settings')}
-                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'settings' ? 'bg-purple-700' : 'hover:bg-purple-800'
-                            }`}
+                        className={`py-2 px-4 rounded-lg transition-colors ${activeMenu === 'settings' ? 'bg-purple-700' : 'hover:bg-purple-800'}`}
                     >
                         Paramètres
                     </button>

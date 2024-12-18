@@ -1,4 +1,3 @@
-// src/pages/Services.js
 import React from 'react';
 import StarField from '../components/StarField';
 
@@ -16,7 +15,7 @@ const ServiceCard = ({ title, price, features, buttonText, isBestOffer, onSelect
                 <li key={index} className="mb-3">{feature}</li>
             ))}
         </ul>
-        <button 
+        <button
             onClick={onSelect}
             className={`${isBestOffer ? 'bg-yellow-400 text-purple-900 hover:bg-yellow-500' : 'bg-purple-600 hover:bg-purple-700'} text-lg font-bold py-4 px-8 rounded-full transition-colors duration-300 mt-auto z-10`}
         >
@@ -36,7 +35,7 @@ const Services = () => {
                 "Sauvegarde quotidienne",
                 "Accès aux fonctionnalités de base"
             ],
-            buttonText: "Chosir ce plan"
+            buttonText: "Choisir ce plan"
         },
         {
             title: "Cloud Pro",
@@ -64,6 +63,15 @@ const Services = () => {
     ];
 
     const handleSelectService = (service) => {
+        // Vérifier si l'utilisateur est connecté
+        const token = localStorage.getItem('token');
+        if (!token) {
+            // Si l'utilisateur n'est pas connecté, redirigez vers la page de login
+            window.location.href = '/login';
+            return;
+        }
+
+        // Si l'utilisateur est connecté, redirigez vers la page de paiement
         const encodedService = encodeURIComponent(JSON.stringify(service));
         window.location.href = `/payment?service=${encodedService}`;
     };
@@ -79,9 +87,9 @@ const Services = () => {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                     {services.map((service, index) => (
-                        <ServiceCard 
-                            key={index} 
-                            {...service} 
+                        <ServiceCard
+                            key={index}
+                            {...service}
                             isBestOffer={index === 1}
                             onSelect={() => handleSelectService(service)}
                         />

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Assure-toi d'utiliser react-router-dom pour les liens
 import StarField from '../../components/StarField';
 
 const Login = () => {
@@ -26,7 +27,6 @@ const Login = () => {
             if (response.ok) {
                 // Sauvegarder le token JWT dans le localStorage
                 localStorage.setItem('token', data.token);
-                alert('Connexion réussie');
                 window.location.href = '/dashboard'; // Rediriger vers le tableau de bord ou la page principale
             } else {
                 alert(data.message || 'Erreur lors de la connexion');
@@ -38,7 +38,7 @@ const Login = () => {
     };
 
     return (
-        <div className="bg-black text-white min-h-screen flex flex-col items-center">
+        <div className="bg-black text-white min-h-screen flex flex-col items-center pt-4">
             <StarField />
             <title>Uber X - Connexion</title>
 
@@ -79,6 +79,16 @@ const Login = () => {
                         </button>
                     </div>
                 </form>
+
+                {/* Lien vers la page d'inscription */}
+                <div className="mt-6">
+                    <p className="text-gray-400">
+                        Vous n'avez pas de compte ?{' '}
+                        <Link to="/register" className="text-purple-600 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                            Créer un compte
+                        </Link>
+                    </p>
+                </div>
             </div>
         </div>
     );
