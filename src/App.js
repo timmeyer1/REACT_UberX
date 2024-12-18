@@ -1,9 +1,13 @@
 // src/App.js
 import React from 'react';
 
-// components
+// -------- components --------
 import Header from './components/Header';
 import Footer from './components/Footer';
+// methods
+import PublicRoute from './components/PublicRoute';
+import PrivateRoute from './components/PrivateRoute';
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Importation de Routes
 
@@ -34,9 +38,10 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/payment" element={<Payment />} />
 
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+
+            <Route path="/login" element={<PublicRoute> <Login /> </PublicRoute>} />
+            <Route path="/register" element={<PublicRoute>  <Register /> </PublicRoute>} />
+            <Route path="/dashboard" element={ <PrivateRoute> <Dashboard /> </PrivateRoute>} />
 
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfUse />} />

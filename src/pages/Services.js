@@ -36,7 +36,7 @@ const Services = () => {
                 "Sauvegarde quotidienne",
                 "Accès aux fonctionnalités de base"
             ],
-            buttonText: "Commencer l'essai gratuit"
+            buttonText: "Chosir ce plan"
         },
         {
             title: "Cloud Pro",
